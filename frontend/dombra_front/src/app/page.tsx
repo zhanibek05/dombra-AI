@@ -1,13 +1,12 @@
-import Image from "next/image";
 
+import Image from "next/image";
 import Main from "./components/main";
-import Footer from "./components/footer";
+import Landing from "./components/landing";
 
 export default function Home() {
   return (
     <div>
-    <Main></Main>
-    <Footer></Footer>
+    <Landing></Landing>
     </div>
   );
 }
