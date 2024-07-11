@@ -6,19 +6,13 @@ import { useState } from "react"
 
 export default function Main() {
 
-  const [songName, setSongName] = useState('');
-
-
-  
-
-
     return (
       <div className="flex flex-col items-center justify-between min-h-screen p-4 bg-gray-220">
         <main className="flex flex-col items-center justify-center flex-grow">
           <h1 className="mb-8 text-2xl font-bold text-center">Play any melody on dombyra</h1>
           <button className="relative flex items-center justify-center w-64 h-64 border-4 border-gray-900 rounded-full hover:scale-110 transition-transform duration-300">
             <div className="absolute flex items-center justify-center w-48 h-48 border-4 border-gray-800 rounded-full animate-pulse">
-              <PlayIcon className="w-16 h-16 text-red-500" />
+              <PlayIcon className="w-16 h-16 text-red-500 " />
             </div>
           </button>
           <p className="mt-4 text-red-500 animate-bounce">Record</p>

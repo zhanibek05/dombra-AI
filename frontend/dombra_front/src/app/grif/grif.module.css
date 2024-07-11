@@ -1,11 +1,11 @@
 
-  
+
   .fretboard {
     display: flex;
     flex-direction: column;
     background-color: #be975b;
     width: 100%;
-    height: calc(var(--fretboard-height) * 1px);
+    height: 150px;
     margin-top: 50px;
     border: rgb(48, 33, 5) 4px solid;
   }
@@ -35,6 +35,7 @@
     border-image: linear-gradient(to left, #777, #bbb, #777) 1 100%;
     justify-content: center;
     align-items: center;
+    background-image: url();
   }
   
   .noteFret:last-child {
@@ -53,15 +54,16 @@
   
   .noteFret::before {
     content: attr(data-note);
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    line-height: 20px;
+    line-height: 30px;
     text-align: center;
     background: teal;
     z-index: 2;
     color: #eee;
     opacity: var(--noteDotOpacity);
+    
   }
   
   .fretmark::after {

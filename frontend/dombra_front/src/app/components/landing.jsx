@@ -25,7 +25,7 @@ export default function Landing() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link
-                    href="upload"
+                    href="record"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
@@ -120,7 +120,7 @@ export default function Landing() {
                         className="h-10 w-10 rounded-full"
                       />
                       <div>
-                        <p className="font-medium">Dimash Kudaibergenov</p>
+                        <p className="font-medium">Sanzhar Ashirbekov</p>
                         <p className="text-xs text-muted-foreground">Dombyra Enthusiast</p>
                       </div>
                     </div>
@@ -139,7 +139,7 @@ export default function Landing() {
                         className="h-10 w-10 rounded-full"
                       />
                       <div>
-                        <p className="font-medium">Meirambek Bespayev</p>
+                        <p className="font-medium">Zhassulan Kainazarov</p>
                         <p className="text-xs text-muted-foreground">Music Teacher</p>
                       </div>
                     </div>
