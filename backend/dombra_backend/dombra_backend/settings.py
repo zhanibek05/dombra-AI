@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    
-    'api'
+    'aiobotocore',
+    'api',
 ]
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
