@@ -10,7 +10,7 @@ export default function Main() {
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
   const [isShowTabs, setIsShowTabs] = useState(false);
-  const [tabs, setTabs] = useState([])
+  const [tabs, setTabs] = useState({})
 
 
   function PlayIcon(props) {
@@ -88,10 +88,11 @@ export default function Main() {
         method: 'POST',
         body: formData,
       });
-
+      
       if (response.ok) {
         console.log('Audio file uploaded successfully');
         const data = await response.json();
+        console.log(data);
         setTabs(data.midi_data)
       } else {
         console.error('Failed to upload audio file');
